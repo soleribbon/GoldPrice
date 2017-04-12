@@ -26,7 +26,7 @@ while True:
     
     print goldprice
     
-    if float(percent) > 0.05:
+    if float(percent) > 0.99:
         print percent
         slack.chat.post_message('#goldpriceforpapa', 'Current Price Per Ounce: ' + goldprice + '\n' + "RECORD HIGH PERCENT!!" + ' ' + '--->' + ' ' + percent + '%') 
         time.sleep(1)
