@@ -5,7 +5,7 @@ import os
 from slacker import Slacker
 
 slack = Slacker('xoxb-168765462614-AF2fvGqqzsTorz0BTvzXaEYu')
-
+print "Started!"
 while True: 
     try:
         s = requests.Session()
