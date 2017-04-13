@@ -6,8 +6,8 @@ from slacker import Slacker
 
 slack = Slacker('xoxb-168765462614-AF2fvGqqzsTorz0BTvzXaEYu')
 
-try: 
-    while True:
+while True: 
+    try:
         s = requests.Session()
         response = s.get("https://www.pmbull.com/gold-price/")
 
@@ -25,16 +25,15 @@ try:
         percent = (semipercent[1:])
 
         print goldprice
-        quit = raw_input("Press q to quit")
+      
         if float(percent) > 0.99:
             print percent
             slack.chat.post_message('#goldpriceforpapa', 'Current Price Per Ounce: ' + goldprice + '\n' + "RECORD HIGH PERCENT!!" + ' ' + '--->' + ' ' + '+' + percent + '%') 
             time.sleep(10)
         else:
             time.sleep(10)
-        if quit == "q":
-            break
-except KeyboardInterrupt:
-    pass
+        
+    except KeyboardInterrupt:
+        break
     
   
