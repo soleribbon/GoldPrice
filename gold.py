@@ -33,6 +33,6 @@ try:
         else:
             time.sleep(10)
 except KeyboardInterrupt:
-    break
+    pass
     
   
