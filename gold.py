@@ -24,8 +24,8 @@ while True:
         semipercent = (percent1[:-1]) #makes percent just a number : 0.01 etc....
         percent = (semipercent[1:])
 
-        print goldprice
-        print percent1
+        print goldprice + ' ' + '//' + ' ' + percent1
+       
         if float(percent) > 0.99:
             print percent
             slack.chat.post_message('#goldpriceforpapa', 'Current Price Per Ounce: ' + goldprice + '\n' + "RECORD HIGH PERCENT!!" + ' ' + '--->' + ' ' + '+' + percent + '%') 
