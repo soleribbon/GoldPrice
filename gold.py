@@ -4,7 +4,7 @@ import time
 import os
 from slacker import Slacker
 
-slack = Slacker('xoxb-168765462614-AF2fvGqqzsTorz0BTvzXaEYu')
+slack = Slacker('insert slack api key here')
 print "Started!"
 while True: 
     try:
